@@ -158,4 +158,4 @@ if uploaded_file is not None:
     st.write(fig_heat)
 
     html = bcr.bar_chart_race(df,title=bcr_title,n_bars=n_bars,figsize=(4,3))
-    components.html(html._repr_html_(),width=10000,height=10000)
+    components.html(html._repr_html_(),width=10000,height=7500)
