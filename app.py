@@ -58,6 +58,10 @@ n_bars = st.sidebar.slider('ランキング上位表示人数', min_value=1,max_
 st.sidebar.write('↪',n_bars, '人')
 from_date = str(st.sidebar.date_input('表示期間(開始)',value=datetime(2000,1,1)))
 to_date = str(st.sidebar.date_input('表示期間（終了）',value=datetime(2100,12,31)))
+steps_per_period = st.sidebar.slider('ピリオド毎のステップ数', min_value=1,max_value=50,value=10)
+st.sidebar.write('↪',steps_per_period)
+period_length = st.sidebar.slider('1ピリオドの長さ', min_value=100,max_value=1000,value=500)
+st.sidebar.write('↪',period_length)
 #####サイドバー#####
 
 if uploaded_file is not None:
@@ -157,5 +161,7 @@ if uploaded_file is not None:
     fig_heat.update_layout(title=heat_title)
     st.write(fig_heat)
 
-    html = bcr.bar_chart_race(df,title=bcr_title,n_bars=n_bars,figsize=(4,3))
+    html = bcr.bar_chart_race(df,title=bcr_title,n_bars=n_bars,figsize=(4,3),steps_per_period=steps_per_period,period_length=period_length)
     components.html(html._repr_html_(),width=10000,height=7500)
+
+st.markdown("※本サービスは、アップロードされたLINEトーク履歴（個人情報を含む）を使用して処理を行います。アップロードされた情報は保存されることなく処理が終了した時点で破棄されますが、心配な方は利用を控えてください。")
