@@ -30,9 +30,9 @@ st.image(main_image)
 3. お好みでカスタマイズして完成！（所要時間：30秒）
 
 # さっそく遊んでみる
-
+LINEトーク履歴（txtファイル）を選択してください
 """
-uploaded_file = st.file_uploader('※ LINEトーク履歴（txtファイル）を選択してください',type="txt",)
+uploaded_file = st.file_uploader("""※期間が1年以上になると動画処理が終わらない可能性があります""",type="txt",)
 st.markdown("**（画面左上からサイドバーを開くと自由にカスタマイズできます）**")
 """
 ---
