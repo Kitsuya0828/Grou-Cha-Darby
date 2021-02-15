@@ -74,7 +74,8 @@ Below are the main components:
 5. logo.png : This is an image for the logo of the website.
 6. mainimg.png : This is an image for the key visual of the website.
 
-For more details, please refer to the link below.
+For more details, please refer to the link below:
+
 [NLP and Streamlit on Heroku. How I deployed my Streamlit based NLP… | by Rahul Bhattacharya | Towards Data Science](https://towardsdatascience.com/nlp-and-streamlit-on-heroku-5ebb56d6a57f)
 
 # Note
@@ -88,6 +89,7 @@ heroku buildpacks:add --index 1 https://github.com/jonathanong/heroku-buildpack-
 ```
 
 See also:
+
 [jonathanong/heroku-buildpack-ffmpeg-latest - Buildpacks - Heroku Elements](https://elements.heroku.com/buildpacks/jonathanong/heroku-buildpack-ffmpeg-latest)
 
 
