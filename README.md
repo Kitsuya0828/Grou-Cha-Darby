@@ -1,6 +1,6 @@
 # Grou-Cha-Darby
 
-This website enables you to make a Bar Chart Race with your LINE chat hisory.
+This website enables you to make a Bar Chart Race with your LINE chat history.
 
 URL : [https://grouchadarby0210.herokuapp.com/](https://grouchadarby0210.herokuapp.com/)
 
@@ -82,7 +82,7 @@ For more details, please refer to the link below:
 
 FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.
 
-To add Heroku buildpack for ffmpegm, run the following from the heroku command line:
+To add Heroku buildpack for ffmpeg, run the following from the heroku command line:
 
 ```bash
 heroku buildpacks:add --index 1 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
